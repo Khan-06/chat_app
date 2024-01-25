@@ -5,11 +5,13 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: 10,
-      itemBuilder: (ctx, index) => Container(
-        padding: const EdgeInsets.all(8),
-        child: const Text('This kinda works!'),
+    return Scaffold(
+      body: ListView.builder(
+        itemCount: 10,
+        itemBuilder: (ctx, index) => Container(
+          padding: const EdgeInsets.all(8),
+          child: const Text('This kinda works!'),
+        ),
       ),
     );
   }
